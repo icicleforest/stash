@@ -7,7 +7,8 @@ import zipfile
 import time
 
 
-DEFAULT_REPO = "ywangd"
+#DEFAULT_REPO = "ywangd"
+DEFAULT_REPO = "icicleforest"
 DEFAULT_BRANCH = "master"
 TMPDIR = os.environ.get('TMPDIR', os.environ.get('TMP'))
 URL_TEMPLATE = 'https://github.com/{}/stash/archive/{}.zip'
