@@ -1,0 +1,61 @@
+#
+# find ./ -type f -name "*py" | while read _l; do if grep ywang ${_l} -q ; then echo ${_l}; grep -n ywang ${_l}; echo; fi; done > hardcoded.list
+#
+./bin/easy_config.py
+62:    v.load_url("https://www.github.com/ywangd/stash/")
+206:                                   "ywangd:master"),
+227:                "command": "webviewer -f -m https://www.github.com/ywangd/stash/",
+
+./bin/gh.py
+133:	gh pull stash ywangd jsbain 
+134:	gh pull stash ywangd:dev jsbain:dev
+
+./bin/pip.py
+434:            GitHubRepository().install('ywangd/pkg_resources', None)
+
+./bin/selfupdate.py
+7:       target         default to ywangd:master
+63:        'Default to ywangd:master or simply master'
+72:        target = os.environ.get('SELFUPDATE_TARGET', 'ywangd:master')
+79:        owner, branch = 'ywangd', fields[0]
+81:        owner, branch = 'ywangd', 'master'
+
+./core.py
+5:https://github.com/ywangd/stash
+
+./getstash.py
+10:#DEFAULT_REPO = "ywangd"
+18:#DEFAULT_PTI_REPO = "ywangd"
+
+./setup.py
+129:    author="https://github.com/ywangd and various contributors",
+130:    url="https://github.com/ywangd/stash/",
+
+./tests/misc/test_selfupdate.py
+39:        self.assertIn("Target: ywangd:master", output)
+40:        self.assertNotIn("Target: ywangd:dev", output)
+47:        self.assertIn("Target: ywangd:dev", output)
+48:        self.assertNotIn("Target: ywangd:master", output)
+54:        output = self.run_command("SELFUPDATE_TARGET=ywangd:dev selfupdate --check", exitcode=None)
+55:        self.assertIn("Target: ywangd:dev", output)
+56:        self.assertNotIn("Target: ywangd:master", output)
+64:        self.assertNotIn("Target: ywangd:master", output)
+71:        self.assertNotIn("Target: ywangd:master", output)
+81:        self.assertNotIn("Target: ywangd:master", output)
+90:        self.assertIn("Target: ywangd:selfupdate_test_does_not_exist", output)
+91:        self.assertNotIn("Target: ywangd:master", output)
+
+./tests/misc/test_wget.py
+12:    download_target = "https://github.com/ywangd/stash/archive/master.zip"
+
+./tests/pip/data/stpkg/setup.py
+12:    url="https://github.com/ywangd/stash/",
+
+./tests/stashtest.py
+31:        "https://github.com/ywangd/stash/",  # main StaSh repo
+
+./tools/pythonista_reinstall.py
+21:def install_stash(repo="ywangd", branch="master"):
+30:        return "ywangd", "master"
+33:        s = "ywangd:" + s
+
