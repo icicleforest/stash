@@ -56,7 +56,7 @@ if not hasattr(subprocess, 'call'):
     subprocess.Popen = Popen
     subprocess.call = call
 #GITTLE_URL = 'https://github.com/jsbain/gittle/archive/master.zip'
-GITTLE_URL = 'https://github.com/icicleforest/gittle/archive/master.zip'
+GITTLE_URL = 'https://github.com/icicleforest/gittle/archive/issue-1.zip'
 FUNKY_URL = 'https://github.com/FriendCode/funky/archive/master.zip'
 DULWICH_URL = 'https://github.com/jsbain/dulwich/archive/ForStaSH_0.12.2.zip'
 REQUIRED_DULWICH_VERSION = (0, 12, 2)
